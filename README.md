@@ -1,6 +1,7 @@
-# Hello World Extension
+# JavaScript support Extension
 
-Sample `Hello World` extension.
+> Warning: 
+> This extension is still in development and may not work as expected.
 
 Please report issues on https://github.com/AuroraEditor/AuroraEditor
 
@@ -10,4 +11,4 @@ For help about extensions go to [#extensions](https://discord.gg/cCcwRFfY8f) on 
 
 1) Clone this project
 2) Press `⌘B`
-3) Open Aurora Editor
+3) Re-Open Aurora Editor
