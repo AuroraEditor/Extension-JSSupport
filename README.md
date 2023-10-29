@@ -1,6 +1,6 @@
 # JavaScript support Extension
 
-> Warning: 
+> Warning: \
 > This extension is still in development and may not work as expected.
 
 Please report issues on https://github.com/AuroraEditor/AuroraEditor
