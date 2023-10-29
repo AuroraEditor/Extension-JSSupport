@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0463E50B27F749CD00806D5C /* HelloWorld.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0463E50A27F749CD00806D5C /* HelloWorld.swift */; };
+		0463E50B27F749CD00806D5C /* JSsupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0463E50A27F749CD00806D5C /* JSsupport.swift */; };
 		2B20A83D28EF4C5B00D14316 /* AEExtensionKit in Frameworks */ = {isa = PBXBuildFile; productRef = 2B20A83C28EF4C5B00D14316 /* AEExtensionKit */; };
 		2B520BAE28FEB0FD000F7489 /* AEExtensionKit in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 2B20A83C28EF4C5B00D14316 /* AEExtensionKit */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		2BDDCB9C292C0FB800486262 /* JSsupport.js in Resources */ = {isa = PBXBuildFile; fileRef = 2BDDCB9B292C0FB800486262 /* JSsupport.js */; };
+		2BDDCB9E292C11B600486262 /* JSBindings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDDCB9D292C11B600486262 /* JSBindings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,9 +29,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0463E4FF27F7492100806D5C /* HelloWorldExtension.AEext */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloWorldExtension.AEext; sourceTree = BUILT_PRODUCTS_DIR; };
-		0463E50927F749CC00806D5C /* HelloWorldExtension-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HelloWorldExtension-Bridging-Header.h"; sourceTree = "<group>"; };
-		0463E50A27F749CD00806D5C /* HelloWorld.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWorld.swift; sourceTree = "<group>"; };
+		0463E4FF27F7492100806D5C /* JSsupportExtension.AEext */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JSsupportExtension.AEext; sourceTree = BUILT_PRODUCTS_DIR; };
+		0463E50927F749CC00806D5C /* JSsupportExtension-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JSsupportExtension-Bridging-Header.h"; sourceTree = "<group>"; };
+		0463E50A27F749CD00806D5C /* JSsupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSsupport.swift; sourceTree = "<group>"; };
+		2BDDCB9B292C0FB800486262 /* JSsupport.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = JSsupport.js; sourceTree = "<group>"; };
+		2BDDCB9D292C11B600486262 /* JSBindings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSBindings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,9 +51,11 @@
 		0463E4F627F7492100806D5C = {
 			isa = PBXGroup;
 			children = (
-				0463E50A27F749CD00806D5C /* HelloWorld.swift */,
+				0463E50A27F749CD00806D5C /* JSsupport.swift */,
+				2BDDCB9D292C11B600486262 /* JSBindings.swift */,
+				2BDDCB9B292C0FB800486262 /* JSsupport.js */,
 				0463E50027F7492100806D5C /* Products */,
-				0463E50927F749CC00806D5C /* HelloWorldExtension-Bridging-Header.h */,
+				0463E50927F749CC00806D5C /* JSsupportExtension-Bridging-Header.h */,
 				04C325522801B3E800C8DA2D /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -57,7 +63,7 @@
 		0463E50027F7492100806D5C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0463E4FF27F7492100806D5C /* HelloWorldExtension.AEext */,
+				0463E4FF27F7492100806D5C /* JSsupportExtension.AEext */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -72,9 +78,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0463E4FE27F7492100806D5C /* HelloWorldExtension */ = {
+		0463E4FE27F7492100806D5C /* JSsupportExtension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0463E50327F7492100806D5C /* Build configuration list for PBXNativeTarget "HelloWorldExtension" */;
+			buildConfigurationList = 0463E50327F7492100806D5C /* Build configuration list for PBXNativeTarget "JSsupportExtension" */;
 			buildPhases = (
 				0463E4FB27F7492100806D5C /* Sources */,
 				0463E4FC27F7492100806D5C /* Frameworks */,
@@ -86,12 +92,12 @@
 			);
 			dependencies = (
 			);
-			name = HelloWorldExtension;
+			name = JSsupportExtension;
 			packageProductDependencies = (
 				2B20A83C28EF4C5B00D14316 /* AEExtensionKit */,
 			);
-			productName = HelloWorldExtension;
-			productReference = 0463E4FF27F7492100806D5C /* HelloWorldExtension.AEext */;
+			productName = JSsupportExtension;
+			productReference = 0463E4FF27F7492100806D5C /* JSsupportExtension.AEext */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -109,7 +115,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 0463E4FA27F7492100806D5C /* Build configuration list for PBXProject "HelloWorldExtension" */;
+			buildConfigurationList = 0463E4FA27F7492100806D5C /* Build configuration list for PBXProject "JSsupport" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -125,7 +131,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0463E4FE27F7492100806D5C /* HelloWorldExtension */,
+				0463E4FE27F7492100806D5C /* JSsupportExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -135,6 +141,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BDDCB9C292C0FB800486262 /* JSsupport.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,7 +165,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "cp -f -R ${BUILT_PRODUCTS_DIR}/*.AEext ~/Library/Application\\ Support/com.auroraeditor/Extensions/\n";
+			shellScript = "killall AuroraEditor\ncp -f -R ${BUILT_PRODUCTS_DIR}/*.AEext ~/Library/Application\\ Support/com.auroraeditor/Extensions/\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -167,7 +174,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0463E50B27F749CD00806D5C /* HelloWorld.swift in Sources */,
+				2BDDCB9E292C11B600486262 /* JSBindings.swift in Sources */,
+				0463E50B27F749CD00806D5C /* JSsupport.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +301,7 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -300,7 +309,7 @@
 				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_NSPrincipalClass = HelloWorldBuilder;
+				INFOPLIST_KEY_NSPrincipalClass = JSsupportBuilder;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -308,11 +317,11 @@
 					"@loader_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.auroraeditor.HelloWorldExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.auroraeditor.JSsupportExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "HelloWorldExtension-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "JSsupportExtension-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = AEext;
@@ -324,6 +333,7 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -331,7 +341,7 @@
 				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_NSPrincipalClass = HelloWorldBuilder;
+				INFOPLIST_KEY_NSPrincipalClass = JSsupportBuilder;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -339,11 +349,11 @@
 					"@loader_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.auroraeditor.HelloWorldExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.auroraeditor.JSsupportExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "HelloWorldExtension-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "JSsupportExtension-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = AEext;
 			};
@@ -352,7 +362,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0463E4FA27F7492100806D5C /* Build configuration list for PBXProject "HelloWorldExtension" */ = {
+		0463E4FA27F7492100806D5C /* Build configuration list for PBXProject "JSsupport" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0463E50127F7492100806D5C /* Debug */,
@@ -361,7 +371,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0463E50327F7492100806D5C /* Build configuration list for PBXNativeTarget "HelloWorldExtension" */ = {
+		0463E50327F7492100806D5C /* Build configuration list for PBXNativeTarget "JSsupportExtension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0463E50427F7492100806D5C /* Debug */,

@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "0463E4FE27F7492100806D5C"
-               BuildableName = "HelloWorldExtension.AEext"
-               BlueprintName = "HelloWorldExtension"
-               ReferencedContainer = "container:HelloWorldExtension.xcodeproj">
+               BuildableName = "JSsupportExtension.AEext"
+               BlueprintName = "JSsupportExtension"
+               ReferencedContainer = "container:JSsupport.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,15 +47,6 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0463E4FE27F7492100806D5C"
-            BuildableName = "HelloWorldExtension.AEext"
-            BlueprintName = "HelloWorldExtension"
-            ReferencedContainer = "container:HelloWorldExtension.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
