@@ -50,8 +50,7 @@ class JSSupport {
     }
 
     func registerFunctions() {
-        let api: @convention (block) (NSString) -> Bool = { (message: NSString) in
-
+        let api: @convention (block) (String) -> Bool = { (message: String) in
             if self.testMode {
                 print("API Test Message: \(message)")
             }
