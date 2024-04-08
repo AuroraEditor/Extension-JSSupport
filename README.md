@@ -20,3 +20,9 @@ Tests completed succesfully.
 This doesn't seem like much, but it's a good start to support JavaScript in Aurora Editor.
 
 If you have any questions, feel free to ask. [@0xWDG](https://discordapp.com/users/918438083861573692) at Discord.
+
+---
+
+# License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
