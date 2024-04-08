@@ -1,14 +1,22 @@
-# JavaScript support Extension
+This is a example for JSSupport in Aurora Editor.
+Please note that this code is subject to change and may not be the final version.
 
-> **Warning**\
-> This extension is still in development and may not work as expected.
+To run the "tests" you can run:
+```bash
+swift JSSupport.swift
+```
 
-Please report issues on https://github.com/AuroraEditor/AuroraEditor
+It should print:
+```plain
+API Test Message: AuroraEditor.api using evaluate...
+API Test Message: api using respond()
+API Test:
+ Function: func
+ Parameters: ["some": value, "dict": ionary]
+JS Error: TypeError: undefined is not an object (evaluating 'this.should.fail')
+Tests completed succesfully.
+```
 
-For help about extensions go to [#extensions](https://discord.gg/cCcwRFfY8f) on our [Discord](https://discord.gg/QYTtDYMMYj) server.
+This doesn't seem like much, but it's a good start to support JavaScript in Aurora Editor.
 
-### How to build/use
-
-1) Clone this project
-2) Press `⌘B`
-3) Re-Open Aurora Editor
+If you have any questions, feel free to ask. [@0xWDG](https://discordapp.com/users/918438083861573692) at Discord.
