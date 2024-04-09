@@ -1,3 +1,10 @@
+> [!CAUTION]
+> This repo is archived.  
+> JSSupport will be built-in and will not require a extension to run.  
+> See: https://github.com/AuroraEditor/AuroraEditor/pull/641
+
+-----
+
 This is a example for JSSupport in Aurora Editor.
 Please note that this code is subject to change and may not be the final version.
 
